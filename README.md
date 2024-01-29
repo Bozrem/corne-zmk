@@ -2,4 +2,4 @@
  My repo to store my current Corne layout
 
  ### Future Notes / Possible Changes
- * None ATM
+ * Add common functions to left raise (e.g. copy, paste, pgup, pgdown)
