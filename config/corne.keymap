@@ -38,6 +38,20 @@
             bindings = <&kt LCTRL &kp X &kp LCTRL>;
             label = "CUT";
         };
+
+        nvim: nvim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_CONTROL &kt RALT &kp T &kt RALT &kp LCTRL &kp N &kp V &kp I &kp M &kp RET &maximize>;
+            label = "NVIM";
+        };
+
+        maximize: maximize {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt RIGHT_ALT &kp F10 &kt RALT>;
+            label = "MAXIMIZE";
+        };
     };
 
     keymap {
@@ -90,10 +104,10 @@
 
         Super {
             bindings = <
-&kp TAB     &trans   &trans   &trans     &trans  &trans      &trans     &trans  &trans     &trans  &trans   &kp DELETE
-&kp ESCAPE  &kp F1   &kp F2   &kp F3     &kp F4  &kp F5      &kp F6     &kp F7  &kp F8     &kp F9  &kp F10  &kp ENTER
-&kp LCTRL   &kp F11  &kp F12  &trans     &trans  &trans      &trans     &trans  &trans     &trans  &trans   &kp RALT
-                              &kp LSHFT  &trans  &kp BSPC    &kp SPACE  &trans  &kp RSHFT
+&kp TAB     &maximize  &nvim    &trans     &trans  &trans      &trans     &trans  &trans     &trans  &trans   &kp DELETE
+&kp ESCAPE  &kp F1     &kp F2   &kp F3     &kp F4  &kp F5      &kp F6     &kp F7  &kp F8     &kp F9  &kp F10  &kp ENTER
+&kp LCTRL   &kp F11    &kp F12  &trans     &trans  &trans      &trans     &trans  &trans     &trans  &trans   &kp RALT
+                                &kp LSHFT  &trans  &kp BSPC    &kp SPACE  &trans  &kp RSHFT
             >;
         };
     };
