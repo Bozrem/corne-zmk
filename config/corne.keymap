@@ -81,9 +81,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp MINUS  &kp UNDERSCORE  &kp GRAVE  &kp TILDE  &trans           &trans     &trans            &kp C_VOL_DN  &kp C_VOL_UP  &trans      &kp DEL
-&kp ESC    &kp EQUAL  &kp KP_PLUS     &kp BSLH   &kp PIPE   &trans           &kp LEFT   &kp DOWN          &kp UP        &kp RIGHT     &trans      &kp RET
-&kp LCTRL  &undo      &cut            &copy      &paste     &trans           &trans     &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT    &kp C_MUTE  &kp RIGHT_ALT
+&kp TAB    &kp MINUS  &kp UNDERSCORE  &kp GRAVE  &kp TILDE  &trans           &trans     &kp C_MUTE        &kp C_VOL_DN  &kp C_VOL_UP    &trans     &kp DEL
+&kp ESC    &kp EQUAL  &kp KP_PLUS     &kp BSLH   &kp PIPE   &trans           &trans     &kp LEFT          &kp UP        &kp DOWN_ARROW  &kp RIGHT  &kp RET
+&kp LCTRL  &undo      &cut            &copy      &paste     &trans           &trans     &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT      &trans     &kp RIGHT_ALT
                                       &kp LSHFT  &mo 3      &kp BACKSPACE    &kp SPACE  &trans            &kp RSHFT
             >;
         };
